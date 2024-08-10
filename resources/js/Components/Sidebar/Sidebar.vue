@@ -49,7 +49,7 @@ function updateChats() {
                     chatList.value.splice(index, 1);
                 }
 
-                if (deletedChatId === props.chat.id) {
+                if (deletedChatId === usePage().props.chat.id) {
                     router.replace(route('chat.new.show'))
                 }
             });
